@@ -1,0 +1,200 @@
+:root {
+  --main-bg-color: rgb(189,205,213);
+
+  --default-nav-icon-color: rgb(100,130,160);
+  --main-nav-color: rgb(42,77,103);
+  --downclick-nav-color: rgb(78,112,135);
+  --hover-nav-color: rgb(62,97,123);
+  --active-nav-icon-color: rgb(60,64,73);
+}
+
+[data-theme="dark-contrast"] {
+  --main-bg-color: rgb(40,44,53);
+
+  --default-nav-icon-color: rgb(80,84,93);
+  --main-nav-color: rgb(250,250,250);
+  --downclick-nav-color: rgb(185,185,185);
+  --hover-nav-color: rgb(215,215,215);
+  --active-nav-icon-color: rgb(250,250,250);
+}
+
+[data-theme="light"] {
+  --main-bg-color: rgb(189,205,213);
+
+  --brand-nav-color: rgb(209,225,233);
+  --default-nav-icon-color: rgb(100,130,160);
+  --main-nav-color: rgb(42,77,103);
+  --downclick-nav-color: rgb(78,112,135);
+  --hover-nav-color: rgb(62,97,123);
+  --active-nav-icon-color: rgb(70,84,103);
+}
+
+[data-theme="dark"] {
+  --main-bg-color: rgb(90,94,110);
+
+  --default-nav-icon-color: rgb(80,84,93);
+  --main-nav-color: rgb(35,40,47);
+  --downclick-nav-color: rgb(185,185,185);
+  --hover-nav-color: rgb(215,215,215);
+  --active-nav-icon-color: rgb(250,250,250);
+}
+
+
+html, body, #root {
+  height: 100%;
+  min-width: 100vw;
+}
+
+#root {
+  padding-top: 40px;
+}
+
+.container-fluid.scrollable {
+  overflow: auto !important;
+  height: 100%;
+  min-width: 100vw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.App {
+  min-height: calc(100vh - 40px);
+  text-align: center;
+  background-color: var(--main-bg-color);
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite .9s linear;
+  }
+}
+
+.App-title {
+  background-color: var(--main-bg-color);
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 80px;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header {
+  background-color: #282c35;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  max-height: 30vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-inline {
+  width: 100%;
+}
+
+.form-right {
+  width: 100%;
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
+
+.form-group {
+  width: 100%;
+  background-color: #ffff;
+  padding-top: 1vmin;
+  padding-right: 2vmin;
+  min-height: 40vh;
+}
+
+.input-group {
+  width: 90% !important;
+}
+
+.form-control {
+  background-color: #ffff;
+}
+
+#formBasicEmail {
+  width: 100%;
+  background-color: #ffff;
+  padding-right: 2vmin;
+  margin-bottom: 2vmin;
+  min-height: 2vmin;
+}
+
+.form-login {
+  background-color: #ffff;
+}
+
+span.input-group-addon {
+  width: 50px !important;
+  background-color: #282c35;
+}
+
+
+.chat-feed {
+  background-color: #ffff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 2vmin;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.content {
+  position: relative;
+  padding-top: 2vmin;
+}
+#right-panel-link {
+  float: left;
+}
+
+.content2 {
+  position: relative;
+  padding-top: 0vmin;
+  padding-left: 2vmin;
+}
+
+#nav-panel-link {
+  float: left;
+}
+
+.card-style {
+  width: '18rem';
+  max-width: 90%;
+  padding-left: 2vmin;
+  margin:0 auto;
+}
+
+
+#nav-text {
+  width:50%;
+}
